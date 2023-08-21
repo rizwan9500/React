@@ -197,6 +197,11 @@ pagesRange = pages > 1000 ? "over a thousand" : "less than 1000";
 pagesRange;
 console.log(`${title} book has ${pagesRange} pages`)
 
+// Short-Circuting and Logical Operators : &&,||,??
+console.log(true && "Some String");
+console.log(false && "Some String");
+console.log(hasMovieAdaptation && "This book has a movie");
+
 
 
 
