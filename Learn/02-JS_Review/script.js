@@ -168,7 +168,7 @@ newGenres;
 
 const updatedBook = {
   ...book,
-  
+
   // Adding a new property
   moviePublicationDate: "2001-12-19",
 
@@ -176,3 +176,28 @@ const updatedBook = {
   pages: 1210
 };
 updatedBook;
+
+// function getYear(str) {
+//   return str.split('-')[0];
+// }
+
+// Arrow Functions
+const getYear = (str) => str.split("-")[0];
+console.log(getYear(publicationDate));
+
+//   ` ` - is template literal incadtes JavaScript     ${script} - Javascript
+
+const summary = `${title}, a ${pages}-page long book, was written by ${author} and published in ${getYear(publicationDate)}. 
+The book has ${hasMovieAdaptation ? "" : "not"} been adapted as a movie`;
+summary;
+
+// Operators
+
+pagesRange = pages > 1000 ? "over a thousand" : "less than 1000";
+pagesRange;
+console.log(`${title} book has ${pagesRange} pages`)
+
+
+
+
+
